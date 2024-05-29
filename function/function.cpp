@@ -5,7 +5,7 @@ int add (int a, int b) // Prototyping (Declaration) of a function.
     // Defining of a function.
     int c;
     c = a + b;
-    return c; 
+    return c; // Returning a value (Sum)
 }
 
 int main()

@@ -7,21 +7,35 @@ class  Rectangle
         int length; 
         int breadth;
     public:
-        Rectangle(int l, int b)
+        Rectangle() // Default Constructors
         {
-            length = l;
-            breadth = b;
+            length = 1;
+            breadth = 1;
         }
-        int area()
-        {
-            return length * breadth;
-        }
-        int perimeter()
-        {
-            int p = 2 * (length  + breadth);
-            return p;
-        }
+        Rectangle(int l, int b); // Constructor Overloading
+
+        int area();
+        int perimeter();
+        ~Rectangle();
 };
+Rectangle::Rectangle(int l, int b)
+{
+    length = l;
+    breadth = b;
+}
+int Rectangle::area()
+{
+    return length * breadth;
+}
+int Rectangle::perimeter()
+{
+    int p = 2 * (length + breadth);
+    return p;
+}
+Rectangle:: ~Rectangle() // Destructors called automatically when main function ends
+{
+
+}
 int main()
 {
     Rectangle r(26,45); // Declare and Initialize
@@ -29,3 +43,4 @@ int main()
     cout << "Perimeter: " << r.perimeter() << " unit" << endl;
     return 0;
 }
+

@@ -1,27 +1,19 @@
 #include <stdio.h>
 
-void funB(int n);
-
-void funA(int n)
+int fun(int n)
 {
-	if (n > 0)
-	{
-		printf("%d ", n);
-		funB(n - 1);
-	}
-}
-
-void funB(int n)
-{
-    if (n > 1)
+    if (n > 100)
     {
-        printf("%d ", n);
-        funA(n/2);
+        return n - 10;
+    }
+    else
+    {
+        return fun(fun(n+11));
     }
 }
 
 int main()
 {
-    int x = 5;
-    funA(x);
+    int x = 95;
+    printf("%d ", fun(x));
 }

@@ -5,7 +5,7 @@
 
 >*Each DSA section has its own folder.*
 
-### Notes are not currently uploaded
+### *!!Notes are currently not uploaded!!*
 
 >*The Notes are inside the **Notes** folder.*
 
